@@ -276,6 +276,40 @@ footer {
 .payment-section li {
   margin-bottom: 4px;
 }
+/* Booking form */
+.booking-form {
+  margin-top: 10px;
+  display: grid;
+  gap: 10px;
+}
+
+.booking-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 10px;
+}
+
+.field label {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.field input,
+.field select,
+.field textarea {
+  width: 100%;
+  padding: 7px 9px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  font-size: 0.9rem;
+}
+
+.field textarea {
+  min-height: 80px;
+  resize: vertical;
+}
 
 @media (max-width: 768px) {
   .hero {
