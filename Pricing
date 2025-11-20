@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pricing – Tutoring with Ezra</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+  <div class="nav-container">
+    <div class="logo" data-lang="en">Tutoring with Ezra</div>
+    <div class="logo" data-lang="fr" style="display:none;">Tutorat avec Ezra</div>
+
+    <nav>
+      <a href="about.html" data-lang="en">About</a>
+      <a href="about.html" data-lang="fr" style="display:none;">À propos</a>
+
+      <a href="subjects.html" data-lang="en">Subjects</a>
+      <a href="subjects.html" data-lang="fr" style="display:none;">Matières</a>
+
+      <a href="pricing.html" data-lang="en">Pricing</a>
+      <a href="pricing.html" data-lang="fr" style="display:none;">Tarifs</a>
+
+      <a href="contact.html" data-lang="en">Contact</a>
+      <a href="contact.html" data-lang="fr" style="display:none;">Contact</a>
+
+      <a href="payment.html" data-lang="en">Payment</a>
+      <a href="payment.html" data-lang="fr" style="display:none;">Paiement</a>
+    </nav>
+
+    <div class="lang-toggle">
+      <button class="lang-btn active" data-set-lang="en">EN</button>
+      <button class="lang-btn" data-set-lang="fr">FR</button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section id="pricing">
+    <h2 data-lang="en">Pricing</h2>
+    <h2 data-lang="fr" style="display:none;">Tarifs</h2>
+
+    <div class="card">
+      <p data-lang="en">
+        Simple, transparent pricing. All sessions are live on Zoom. Prices are in Canadian dollars (CAD).
+      </p>
+      <p data-lang="fr" style="display:none;">
+        Une tarification simple et transparente. Toutes les séances se déroulent en direct sur Zoom. Les prix sont en dollars canadiens (CAD).
+      </p>
+
+      <div class="pricing-grid">
+        <div class="price-card">
+          <h3 data-lang="en">1-on-1 tutoring</h3>
+          <h3 data-lang="fr" style="display:none;">Tutorat individuel</h3>
+          <div class="price">40 CAD / hour</div>
+          <p class="small" data-lang="en">
+            Personalized support focused entirely on your child’s needs.
+          </p>
+          <p class="small" data-lang="fr" style="display:none;">
+            Accompagnement personnalisé entièrement centré sur les besoins de votre enfant.
+          </p>
+          <p class="small" data-lang="en">
+            Approximate international equivalent: about <strong>30 USD / hour</strong>.
+          </p>
+          <p class="small" data-lang="fr" style="display:none;">
+            Équivalent international approximatif : environ <strong>30 USD / heure</strong>.
+          </p>
+        </div>
+
+        <div class="price-card">
+          <h3 data-lang="en">2-student group</h3>
+          <h3 data-lang="fr" style="display:none;">Groupe de 2 élèves</h3>
+          <div class="price">30 CAD / hour per student</div>
+          <p class="small" data-lang="en">
+            Great for siblings or friends in a similar grade, learning together.
+          </p>
+          <p class="small" data-lang="fr" style="display:none;">
+            Idéal pour la fratrie ou deux amis de niveau similaire qui apprennent ensemble.
+          </p>
+          <p class="small" data-lang="en">
+            Approximate international equivalent: about <strong>23 USD / hour per student</strong>.
+          </p>
+          <p class="small" data-lang="fr" style="display:none;">
+            Équivalent international approximatif : environ <strong>23 USD / heure par élève</strong>.
+          </p>
+        </div>
+
+        <div class="price-card">
+          <h3 data-lang="en">3+ student group</h3>
+          <h3 data-lang="fr" style="display:none;">Groupe de 3 élèves ou plus</h3>
+          <div class="price">25 CAD / hour per student</div>
+          <p class="small" data-lang="en">
+            Small-group learning with a discounted rate, while keeping plenty of attention for each child.
+          </p>
+          <p class="small" data-lang="fr" style="display:none;">
+            Apprentissage en petit groupe à tarif réduit, tout en gardant une bonne attention pour chaque élève.
+          </p>
+          <p class="small" data-lang="en">
+            Approximate international equivalent: about <strong>19 USD / hour per student</strong>.
+          </p>
+          <p class="small" data-lang="fr" style="display:none;">
+            Équivalent international approximatif : environ <strong>19 USD / heure par élève</strong>.
+          </p>
+        </div>
+      </div>
+
+      <p style="margin-top:10px;" class="small" data-lang="en">
+        Group sessions work best when students are in similar grades and studying similar topics. For payment options, see the Payment page. USD amounts are approximate and may vary slightly with exchange rates.
+      </p>
+      <p style="margin-top:10px;" class="small" data-lang="fr" style="display:none;">
+        Les séances de groupe fonctionnent mieux lorsque les élèves sont de niveau similaire et travaillent sur des notions proches. Pour les options de paiement, consultez la page Paiement. Les montants en USD sont approximatifs et peuvent varier légèrement avec le taux de change.
+      </p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <span data-lang="en">© Tutoring with Ezra</span>
+  <span data-lang="fr" style="display:none;">© Tutorat avec Ezra</span>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
