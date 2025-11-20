@@ -3,13 +3,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact & Booking – Tutoring with Ezra</title>
+  <title>Contact – Tutoring with Ezra</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
+
 <header>
   <div class="nav-container">
     <div class="logo" data-lang="en">Tutoring with Ezra</div>
@@ -48,126 +50,42 @@
 </header>
 
 <main>
-  <section id="contact">
-    <h2 data-lang="en">Contact & booking</h2>
-    <h2 data-lang="fr" style="display:none;">Contact et réservation</h2>
+<section id="contact">
+  <h2 data-lang="en">Contact & booking</h2>
+  <h2 data-lang="fr" style="display:none;">Contact et réservation</h2>
 
-    <div class="card contact-card">
-      <p data-lang="en">
-        Please use this form to request a first session or ask questions. I’ll reply by email as soon as possible.
-      </p>
-      <p data-lang="fr" style="display:none;">
-        Veuillez utiliser ce formulaire pour réserver une première séance ou poser vos questions. Je vous répondrai par courriel dès que possible.
-      </p>
+  <div class="card contact-card">
+    <p data-lang="en">
+      To ask questions, book a first session, or get more information, feel free to contact me:
+    </p>
+    <p data-lang="fr" style="display:none;">
+      Pour poser des questions, réserver une première séance ou obtenir plus d’informations, vous pouvez me contacter :
+    </p>
 
-      <!-- BOOKING FORM -->
-      <form class="booking-form"
-            action="https://formsubmit.co/tutoringwithezra@gmail.com"
-            method="POST">
+    <p style="margin-top:6px;">
+      <strong>Email:</strong>
+      <a href="mailto:tutoringwithezra@gmail.com">tutoringwithezra@gmail.com</a>
+    </p>
 
-        <!-- FormSubmit settings -->
-        <input type="hidden" name="_next" value="https://ezrasd.github.io/Tutoring-with-Ezra/payment.html">
-        <input type="hidden" name="_subject" value="New tutoring booking request (website)">
-        <input type="hidden" name="_captcha" value="false">
+    <!-- Friendly pre-session chat invitation -->
+    <p style="margin-top:12px;" data-lang="en">
+      Parents are also welcome to reach out for a short chat before the first session if they'd like —
+      I'm always happy to talk through goals, learning needs, or any questions you may have.
+    </p>
 
-        <div class="booking-grid">
-          <div class="field">
-            <label data-lang="en" for="parent-name">Parent/guardian name</label>
-            <label data-lang="fr" for="parent-name" style="display:none;">Nom du parent/tuteur</label>
-            <input type="text" id="parent-name" name="Parent / Guardian name" required>
-          </div>
+    <p style="margin-top:12px; display:none;" data-lang="fr">
+      Les parents peuvent également me contacter pour une petite discussion avant la première séance s’ils le souhaitent —
+      je suis toujours heureux de parler des objectifs, des besoins d’apprentissage ou de répondre à vos questions.
+    </p>
 
-          <div class="field">
-            <label data-lang="en" for="email">Email</label>
-            <label data-lang="fr" for="email" style="display:none;">Courriel</label>
-            <input type="email" id="email" name="email" required>
-          </div>
-
-          <div class="field">
-            <label data-lang="en" for="phone">Phone (optional)</label>
-            <label data-lang="fr" for="phone" style="display:none;">Téléphone (optionnel)</label>
-            <input type="tel" id="phone" name="Phone (optional)">
-          </div>
-
-          <div class="field">
-            <label data-lang="en" for="student-name">Student’s name</label>
-            <label data-lang="fr" for="student-name" style="display:none;">Nom de l’élève</label>
-            <input type="text" id="student-name" name="Student name" required>
-          </div>
-
-          <div class="field">
-            <label data-lang="en" for="grade">Grade (K–8)</label>
-            <label data-lang="fr" for="grade" style="display:none;">Niveau scolaire (maternelle à 8e)</label>
-            <select id="grade" name="Grade (K–8)" required>
-              <option value="" selected disabled>Choose a grade</option>
-              <option value="K">Kindergarten</option>
-              <option value="1">Grade 1</option>
-              <option value="2">Grade 2</option>
-              <option value="3">Grade 3</option>
-              <option value="4">Grade 4</option>
-              <option value="5">Grade 5</option>
-              <option value="6">Grade 6</option>
-              <option value="7">Grade 7</option>
-              <option value="8">Grade 8</option>
-            </select>
-          </div>
-
-          <div class="field">
-            <label data-lang="en" for="subjects">Subjects</label>
-            <label data-lang="fr" for="subjects" style="display:none;">Matières</label>
-            <input type="text" id="subjects" name="Subjects"
-                   placeholder="e.g. Math, French, English, Science" required>
-          </div>
-
-          <div class="field">
-            <label data-lang="en" for="language">Preferred tutoring language</label>
-            <label data-lang="fr" for="language" style="display:none;">Langue de tutorat préférée</label>
-            <select id="language" name="Preferred language" required>
-              <option value="" selected disabled>Select</option>
-              <option value="English">English</option>
-              <option value="French">French</option>
-              <option value="Both">Both / alternating</option>
-            </select>
-          </div>
-
-          <div class="field">
-            <label data-lang="en" for="timezone">Your time zone / city</label>
-            <label data-lang="fr" for="timezone" style="display:none;">Votre fuseau horaire / ville</label>
-            <input type="text" id="timezone" name="Time zone / City"
-                   placeholder="e.g. Toronto (EST), Vancouver (PST)">
-          </div>
-        </div>
-
-        <div class="field">
-          <label data-lang="en" for="times">Preferred days & times</label>
-          <label data-lang="fr" for="times" style="display:none;">Jours et heures préférés</label>
-          <textarea id="times" name="Preferred days and times"
-                    placeholder="For example: Tuesdays after 6pm, Saturdays morning"></textarea>
-        </div>
-
-        <div class="field">
-          <label data-lang="en" for="message">Anything else I should know?</label>
-          <label data-lang="fr" for="message" style="display:none;">Autres informations importantes</label>
-          <textarea id="message" name="Additional details"
-                    placeholder="Learning goals, specific concerns, school program (IB, French immersion, etc.)."></textarea>
-        </div>
-
-        <button type="submit" class="primary-btn" data-lang="en">
-          Send booking request
-        </button>
-        <button type="submit" class="primary-btn" data-lang="fr" style="display:none;">
-          Envoyer la demande de réservation
-        </button>
-      </form>
-
-      <p class="small" style="margin-top:10px;" data-lang="en">
-        After you submit this form, you’ll be automatically taken to the Payment page to see e-transfer and PayPal details.
-      </p>
-      <p class="small" style="margin-top:10px;" data-lang="fr" style="display:none;">
-        Après l’envoi du formulaire, vous serez automatiquement redirigé vers la page Paiement pour voir les détails de virement Interac et PayPal.
-      </p>
-    </div>
-  </section>
+    <p class="small" style="margin-top:12px;" data-lang="en">
+      When sending an email, you may include your child's grade, school, and the subjects you're interested in.
+    </p>
+    <p class="small" style="margin-top:12px; display:none;" data-lang="fr">
+      Dans votre message, vous pouvez indiquer le niveau scolaire de votre enfant, son école et les matières qui vous intéressent.
+    </p>
+  </div>
+</section>
 </main>
 
 <footer>
