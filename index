@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tutoring with Ezra</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+  <div class="nav-container">
+    <div class="logo" data-lang="en">Tutoring with Ezra</div>
+    <div class="logo" data-lang="fr" style="display:none;">Tutorat avec Ezra</div>
+
+    <nav>
+      <a href="about.html" data-lang="en">About</a>
+      <a href="about.html" data-lang="fr" style="display:none;">À propos</a>
+
+      <a href="subjects.html" data-lang="en">Subjects</a>
+      <a href="subjects.html" data-lang="fr" style="display:none;">Matières</a>
+
+      <a href="pricing.html" data-lang="en">Pricing</a>
+      <a href="pricing.html" data-lang="fr" style="display:none;">Tarifs</a>
+
+      <a href="contact.html" data-lang="en">Contact</a>
+      <a href="contact.html" data-lang="fr" style="display:none;">Contact</a>
+
+      <a href="payment.html" data-lang="en">Payment</a>
+      <a href="payment.html" data-lang="fr" style="display:none;">Paiement</a>
+    </nav>
+
+    <div class="lang-toggle">
+      <button class="lang-btn active" data-set-lang="en">EN</button>
+      <button class="lang-btn" data-set-lang="fr">FR</button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <!-- HERO -->
+  <section class="hero">
+    <div>
+      <div class="badge" data-lang="en">
+        Bilingual Online Tutoring · Toronto
+      </div>
+      <div class="badge" data-lang="fr" style="display:none;">
+        Tutorat bilingue en ligne · Toronto
+      </div>
+
+      <h1 data-lang="en">Tutoring in English & French (K–8) — online with Ezra</h1>
+      <h1 data-lang="fr" style="display:none;">Tutorat en anglais et en français (maternelle à 8e année) — en ligne avec Ezra</h1>
+
+      <p data-lang="en">
+        I help students in kindergarten through Grade 8 build confidence in math, French, English, and science through patient, personalized Zoom lessons.
+      </p>
+      <p data-lang="fr" style="display:none;">
+        J’aide les élèves de la maternelle à la 8e année à prendre confiance en mathématiques, en français, en anglais et en sciences grâce à des séances personnalisées sur Zoom.
+      </p>
+
+      <ul class="hero-list">
+        <li data-lang="en">Perfectly bilingual (English/French)</li>
+        <li data-lang="fr" style="display:none;">Parfaitement bilingue (anglais/français)</li>
+
+        <li data-lang="en">Focus on K–8 (elementary & early high school)</li>
+        <li data-lang="fr" style="display:none;">Élèves de la maternelle à la 8e année</li>
+
+        <li data-lang="en">Homework help, test prep, and skill-building</li>
+        <li data-lang="fr" style="display:none;">Aide aux devoirs, préparation aux tests et renforcement des bases</li>
+      </ul>
+
+      <div class="hero-cta">
+        <a href="contact.html">
+          <button class="primary-btn" data-lang="en">Book a first session</button>
+          <button class="primary-btn" data-lang="fr" style="display:none;">Réserver une première séance</button>
+        </a>
+        <span class="hero-note" data-lang="en">Online on Zoom · Flexible evening and weekend times</span>
+        <span class="hero-note" data-lang="fr" style="display:none;">En ligne sur Zoom · Soirs et fins de semaine flexibles</span>
+      </div>
+    </div>
+
+    <aside class="hero-side">
+      <h3 data-lang="en">Quick details</h3>
+      <h3 data-lang="fr" style="display:none;">Infos rapides</h3>
+
+      <p data-lang="en">
+        1-on-1 sessions at <strong>40 CAD/hour</strong>, with discounted group rates for siblings or friends.
+      </p>
+      <p data-lang="fr" style="display:none;">
+        Séances individuelles à <strong>40 $ CAD/heure</strong>, avec tarifs réduits pour les groupes (fratrie ou amis).
+      </p>
+
+      <div class="tag-grid">
+        <span class="tag" data-lang="en">McGill student</span>
+        <span class="tag" data-lang="fr" style="display:none;">Étudiant à McGill</span>
+
+        <span class="tag" data-lang="en">Engineering</span>
+        <span class="tag" data-lang="fr" style="display:none;">Génie</span>
+
+        <span class="tag" data-lang="en">IB Graduate</span>
+        <span class="tag" data-lang="fr" style="display:none;">Diplômé du programme IB</span>
+
+        <span class="tag" data-lang="en">4.0 GPA</span>
+        <span class="tag" data-lang="fr" style="display:none;">Moyenne de 4,0</span>
+
+        <span class="tag" data-lang="en">Perfectly bilingual</span>
+        <span class="tag" data-lang="fr" style="display:none;">Parfaitement bilingue</span>
+      </div>
+    </aside>
+  </section>
+</main>
+
+<footer>
+  <span data-lang="en">© Tutoring with Ezra</span>
+  <span data-lang="fr" style="display:none;">© Tutorat avec Ezra</span>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
