@@ -9,9 +9,17 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 
-  <!-- PayPal SDK for Hosted Buttons -->
-  <!-- TODO: replace YOUR_CLIENT_ID with your real PayPal client ID -->
-  <script src="https://www.paypal.com/sdk/js?client-id=YOUR_CLIENT_ID&components=hosted-buttons"></script>
+  <!-- PayPal SDK (Part 1 from your screenshot) -->
+  <!-- Paste the exact code PayPal gave you here, e.g.:                     -->
+  <!-- <script                                                              -->
+  <!--   src="https://www.paypal.com/sdk/js?client-id=.....&currency=CAD"> -->
+  <!-- </script>                                                            -->
+  <!-- ↓↓↓ REPLACE THIS PLACEHOLDER WITH YOUR REAL PART 1 SCRIPT ↓↓↓ -->
+  <script
+    src="https://www.paypal.com/sdk/js?client-id=YOUR_CLIENT_ID_HERE&components=hosted-buttons&currency=CAD">
+  </script>
+  <!-- ↑↑↑ REPLACE THIS LINE WITH THE REAL PART 1 SCRIPT FROM PAYPAL ↑↑↑ -->
+
 </head>
 <body>
 <header>
@@ -115,12 +123,12 @@
         PayPal convertit automatiquement les CAD dans votre devise locale.
       </p>
 
-      <div id="paypal-container-LVEQ256ZYBAYE" style="margin-top:12px;"></div>
-
+      <!-- Part 2: your PayPal Hosted Button code -->
+      <div id="paypal-container-LVEQ256ZYBAYE"></div>
       <script>
         paypal.HostedButtons({
           hostedButtonId: "LVEQ256ZYBAYE",
-        }).render("#paypal-container-LVEQ256ZYBAYE");
+        }).render("#paypal-container-LVEQ256ZYBAYE")
       </script>
 
       <p class="small" style="margin-top:14px;" data-lang="en">
