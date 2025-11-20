@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About – Tutoring with Ezra</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+  <div class="nav-container">
+    <div class="logo" data-lang="en">Tutoring with Ezra</div>
+    <div class="logo" data-lang="fr" style="display:none;">Tutorat avec Ezra</div>
+
+    <nav>
+      <a href="about.html" data-lang="en">About</a>
+      <a href="about.html" data-lang="fr" style="display:none;">À propos</a>
+
+      <a href="subjects.html" data-lang="en">Subjects</a>
+      <a href="subjects.html" data-lang="fr" style="display:none;">Matières</a>
+
+      <a href="pricing.html" data-lang="en">Pricing</a>
+      <a href="pricing.html" data-lang="fr" style="display:none;">Tarifs</a>
+
+      <a href="contact.html" data-lang="en">Contact</a>
+      <a href="contact.html" data-lang="fr" style="display:none;">Contact</a>
+
+      <a href="payment.html" data-lang="en">Payment</a>
+      <a href="payment.html" data-lang="fr" style="display:none;">Paiement</a>
+    </nav>
+
+    <div class="lang-toggle">
+      <button class="lang-btn active" data-set-lang="en">EN</button>
+      <button class="lang-btn" data-set-lang="fr">FR</button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section id="about">
+    <h2 data-lang="en">About me</h2>
+    <h2 data-lang="fr" style="display:none;">À propos de moi</h2>
+
+    <div class="card two-column">
+      <div>
+        <p data-lang="en">
+          Hi! I’m Ezra, a student at McGill University studying engineering. I graduated from high school last year in the International Baccalaureate (IB) program with a 4.0 GPA.
+        </p>
+        <p data-lang="fr" style="display:none;">
+          Bonjour! Je m’appelle Ezra, je suis étudiant en génie à l’Université McGill. J’ai terminé le secondaire l’année dernière dans le programme du Baccalauréat International (IB) avec une moyenne de 4,0.
+        </p>
+
+        <p style="margin-top:8px;" data-lang="en">
+          I’m perfectly bilingual in English and French, and I know what it’s like to navigate school, homework, and exams — I was just there. My goal is to make learning less stressful and more encouraging for younger students.
+        </p>
+        <p style="margin-top:8px;" data-lang="fr" style="display:none;">
+          Je suis parfaitement bilingue en français et en anglais, et je comprends bien la réalité des devoirs, des évaluations et du stress scolaire — je viens tout juste de passer par là. Mon objectif est de rendre l’apprentissage moins stressant et plus motivant pour les élèves.
+        </p>
+      </div>
+      <div>
+        <p data-lang="en"><strong>What parents can expect:</strong></p>
+        <p data-lang="fr" style="display:none;"><strong>Ce que les parents peuvent attendre :</strong></p>
+
+        <ul class="list">
+          <li data-lang="en">Clear explanations at your child’s level</li>
+          <li data-lang="fr" style="display:none;">Des explications claires adaptées au niveau de votre enfant</li>
+
+          <li data-lang="en">Positive, patient support in both languages</li>
+          <li data-lang="fr" style="display:none;">Un accompagnement positif et patient dans les deux langues</li>
+
+          <li data-lang="en">Regular practice and feedback</li>
+          <li data-lang="fr" style="display:none;">De la pratique régulière et des retours fréquents</li>
+
+          <li data-lang="en">A friendly role model who understands school today</li>
+          <li data-lang="fr" style="display:none;">Un modèle positif qui comprend la réalité scolaire actuelle</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <span data-lang="en">© Tutoring with Ezra</span>
+  <span data-lang="fr" style="display:none;">© Tutorat avec Ezra</span>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
