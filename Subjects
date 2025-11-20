@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Subjects – Tutoring with Ezra</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+  <div class="nav-container">
+    <div class="logo" data-lang="en">Tutoring with Ezra</div>
+    <div class="logo" data-lang="fr" style="display:none;">Tutorat avec Ezra</div>
+
+    <nav>
+      <a href="about.html" data-lang="en">About</a>
+      <a href="about.html" data-lang="fr" style="display:none;">À propos</a>
+
+      <a href="subjects.html" data-lang="en">Subjects</a>
+      <a href="subjects.html" data-lang="fr" style="display:none;">Matières</a>
+
+      <a href="pricing.html" data-lang="en">Pricing</a>
+      <a href="pricing.html" data-lang="fr" style="display:none;">Tarifs</a>
+
+      <a href="contact.html" data-lang="en">Contact</a>
+      <a href="contact.html" data-lang="fr" style="display:none;">Contact</a>
+
+      <a href="payment.html" data-lang="en">Payment</a>
+      <a href="payment.html" data-lang="fr" style="display:none;">Paiement</a>
+    </nav>
+
+    <div class="lang-toggle">
+      <button class="lang-btn active" data-set-lang="en">EN</button>
+      <button class="lang-btn" data-set-lang="fr">FR</button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section id="subjects">
+    <h2 data-lang="en">Subjects & levels</h2>
+    <h2 data-lang="fr" style="display:none;">Matières et niveaux</h2>
+
+    <div class="card">
+      <p data-lang="en">
+        I tutor students from kindergarten to Grade 8 (K–8) in:
+      </p>
+      <p data-lang="fr" style="display:none;">
+        J’offre du tutorat pour les élèves de la maternelle à la 8e année en :
+      </p>
+
+      <ul class="list">
+        <li data-lang="en">Math</li>
+        <li data-lang="fr" style="display:none;">Mathématiques</li>
+
+        <li data-lang="en">French (reading, writing, grammar, oral)</li>
+        <li data-lang="fr" style="display:none;">Français (lecture, écriture, grammaire, oral)</li>
+
+        <li data-lang="en">English (reading, writing, grammar)</li>
+        <li data-lang="fr" style="display:none;">Anglais (lecture, écriture, grammaire)</li>
+
+        <li data-lang="en">Science (elementary & early high school level)</li>
+        <li data-lang="fr" style="display:none;">Sciences (niveau primaire et début du secondaire)</li>
+      </ul>
+
+      <p style="margin-top:8px;" data-lang="en">
+        Sessions are held online via Zoom, with interactive activities, screen sharing, and plenty of practice questions.
+      </p>
+      <p style="margin-top:8px;" data-lang="fr" style="display:none;">
+        Les séances se déroulent en ligne sur Zoom avec des activités interactives, du partage d’écran et beaucoup de questions de pratique.
+      </p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <span data-lang="en">© Tutoring with Ezra</span>
+  <span data-lang="fr" style="display:none;">© Tutorat avec Ezra</span>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
