@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Payment – Tutoring with Ezra</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+  <div class="nav-container">
+    <div class="logo" data-lang="en">Tutoring with Ezra</div>
+    <div class="logo" data-lang="fr" style="display:none;">Tutorat avec Ezra</div>
+
+    <nav>
+      <a href="about.html" data-lang="en">About</a>
+      <a href="about.html" data-lang="fr" style="display:none;">À propos</a>
+
+      <a href="subjects.html" data-lang="en">Subjects</a>
+      <a href="subjects.html" data-lang="fr" style="display:none;">Matières</a>
+
+      <a href="pricing.html" data-lang="en">Pricing</a>
+      <a href="pricing.html" data-lang="fr" style="display:none;">Tarifs</a>
+
+      <a href="contact.html" data-lang="en">Contact</a>
+      <a href="contact.html" data-lang="fr" style="display:none;">Contact</a>
+
+      <a href="payment.html" data-lang="en">Payment</a>
+      <a href="payment.html" data-lang="fr" style="display:none;">Paiement</a>
+    </nav>
+
+    <div class="lang-toggle">
+      <button class="lang-btn active" data-set-lang="en">EN</button>
+      <button class="lang-btn" data-set-lang="fr">FR</button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section id="payment" class="payment-section">
+    <h2 data-lang="en">Payment options</h2>
+    <h2 data-lang="fr" style="display:none;">Options de paiement</h2>
+
+    <div class="card">
+      <p data-lang="en">
+        All rates are listed in Canadian dollars (CAD). How you pay depends on where you are located:
+      </p>
+      <p data-lang="fr" style="display:none;">
+        Tous les tarifs sont indiqués en dollars canadiens (CAD). Le mode de paiement dépend de l’endroit où vous vous trouvez :
+      </p>
+
+      <p class="small" style="margin-top:6px;" data-lang="en">
+        For families outside Canada, here are approximate conversions to U.S. dollars (USD), just to give a sense of scale:
+        40 CAD ≈ 30 USD, 30 CAD ≈ 23 USD, 25 CAD ≈ 19 USD. The exact amount in your currency may vary slightly with exchange rates.
+      </p>
+      <p class="small" style="margin-top:6px;" data-lang="fr" style="display:none;">
+        Pour les familles à l’extérieur du Canada, voici des conversions approximatives en dollars américains (USD), à titre indicatif :
+        40 CAD ≈ 30 USD, 30 CAD ≈ 23 USD, 25 CAD ≈ 19 USD. Le montant exact dans votre devise peut varier légèrement selon le taux de change.
+      </p>
+
+      <h3 data-lang="en">If you are in Canada</h3>
+      <h3 data-lang="fr" style="display:none;">Si vous êtes au Canada</h3>
+
+      <ul>
+        <li data-lang="en">
+          You can pay by <strong>Interac e-transfer in CAD</strong> to:
+          <strong>tutoringwithezra@gmail.com</strong>.
+        </li>
+        <li data-lang="fr" style="display:none;">
+          Vous pouvez payer par <strong>virement Interac en CAD</strong> à :
+          <strong>tutoringwithezra@gmail.com</strong>.
+        </li>
+
+        <li data-lang="en">
+          Please include your child’s name and the date(s) of the session in the message.
+        </li>
+        <li data-lang="fr" style="display:none;">
+          Merci d’indiquer le nom de votre enfant et la ou les dates de séance dans le message du virement.
+        </li>
+
+        <li data-lang="en">
+          You can also pay in CAD through <strong>PayPal</strong> if you prefer.
+        </li>
+        <li data-lang="fr" style="display:none;">
+          Vous pouvez aussi payer en CAD via <strong>PayPal</strong> si vous préférez.
+        </li>
+      </ul>
+
+      <h3 style="margin-top:14px;" data-lang="en">If you are outside Canada</h3>
+      <h3 style="margin-top:14px;" data-lang="fr" style="display:none;">Si vous êtes à l’extérieur du Canada</h3>
+
+      <ul>
+        <li data-lang="en">
+          Payments are made through <strong>PayPal</strong>. PayPal will automatically convert from CAD into your local currency.
+        </li>
+        <li data-lang="fr" style="display:none;">
+          Les paiements se font via <strong>PayPal</strong>. PayPal convertit automatiquement les montants en CAD dans votre devise locale.
+        </li>
+
+        <li data-lang="en">
+          You will receive a secure PayPal link or invoice after we confirm the session time by email at
+          <strong>tutoringwithezra@gmail.com</strong>.
+        </li>
+        <li data-lang="fr" style="display:none;">
+          Vous recevrez un lien sécurisé ou une facture PayPal une fois l’horaire confirmé par courriel à
+          <strong>tutoringwithezra@gmail.com</strong>.
+        </li>
+      </ul>
+
+      <h3 style="margin-top:14px;" data-lang="en">When to pay</h3>
+      <h3 style="margin-top:14px;" data-lang="fr" style="display:none;">Quand payer</h3>
+
+      <ul>
+        <li data-lang="en">
+          Payment is typically made <strong>after each session</strong>, unless we agree together on another schedule (for example, weekly).
+        </li>
+        <li data-lang="fr" style="display:none;">
+          Le paiement se fait généralement <strong>après chaque séance</strong>, sauf si nous convenons ensemble d’un autre arrangement (par exemple, chaque semaine).
+        </li>
+      </ul>
+
+      <p class="small" style="margin-top:10px;" data-lang="en">
+        If you have any questions about payment or currencies, feel free to ask in your first email and I’ll clarify what works best for your situation.
+      </p>
+      <p class="small" style="margin-top:10px;" data-lang="fr" style="display:none;">
+        Si vous avez des questions au sujet du paiement ou des devises, n’hésitez pas à les poser dans votre premier courriel et je vous expliquerai ce qui est le plus simple pour votre situation.
+      </p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <span data-lang="en">© Tutoring with Ezra</span>
+  <span data-lang="fr" style="display:none;">© Tutorat avec Ezra</span>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
