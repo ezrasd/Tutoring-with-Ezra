@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact – Tutoring with Ezra</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+  <div class="nav-container">
+    <div class="logo" data-lang="en">Tutoring with Ezra</div>
+    <div class="logo" data-lang="fr" style="display:none;">Tutorat avec Ezra</div>
+
+    <nav>
+      <a href="about.html" data-lang="en">About</a>
+      <a href="about.html" data-lang="fr" style="display:none;">À propos</a>
+
+      <a href="subjects.html" data-lang="en">Subjects</a>
+      <a href="subjects.html" data-lang="fr" style="display:none;">Matières</a>
+
+      <a href="pricing.html" data-lang="en">Pricing</a>
+      <a href="pricing.html" data-lang="fr" style="display:none;">Tarifs</a>
+
+      <a href="contact.html" data-lang="en">Contact</a>
+      <a href="contact.html" data-lang="fr" style="display:none;">Contact</a>
+
+      <a href="payment.html" data-lang="en">Payment</a>
+      <a href="payment.html" data-lang="fr" style="display:none;">Paiement</a>
+    </nav>
+
+    <div class="lang-toggle">
+      <button class="lang-btn active" data-set-lang="en">EN</button>
+      <button class="lang-btn" data-set-lang="fr">FR</button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section id="contact">
+    <h2 data-lang="en">Contact & booking</h2>
+    <h2 data-lang="fr" style="display:none;">Contact et réservation</h2>
+
+    <div class="card contact-card">
+      <p data-lang="en">
+        To ask questions or book a first session, please contact me:
+      </p>
+      <p data-lang="fr" style="display:none;">
+        Pour poser des questions ou réserver une première séance, vous pouvez me contacter :
+      </p>
+
+      <p style="margin-top:6px;">
+        <strong>Email:</strong> <a href="mailto:tutoringwithezra@gmail.com">tutoringwithezra@gmail.com</a>
+      </p>
+
+      <p class="small" style="margin-top:8px;" data-lang="en">
+        In your message, you can include your child’s grade, school, and which subjects you’re interested in, as well as a few possible times that work for you.
+      </p>
+      <p class="small" style="margin-top:8px;" data-lang="fr" style="display:none;">
+        Dans votre message, vous pouvez indiquer le niveau scolaire de votre enfant, son école, les matières qui vous intéressent, ainsi que quelques disponibilités qui vous conviennent.
+      </p>
+
+      <p class="small" style="margin-top:8px;" data-lang="en">
+        For details on how to pay (e-transfer or PayPal), please see the Payment page.
+      </p>
+      <p class="small" style="margin-top:8px;" data-lang="fr" style="display:none;">
+        Pour les détails de paiement (virement Interac ou PayPal), veuillez consulter la page Paiement.
+      </p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <span data-lang="en">© Tutoring with Ezra</span>
+  <span data-lang="fr" style="display:none;">© Tutorat avec Ezra</span>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
