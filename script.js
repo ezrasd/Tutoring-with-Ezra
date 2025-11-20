@@ -28,3 +28,12 @@ langButtons.forEach(btn => {
 
 // Default language: English
 setLanguage("en");
+// Mobile menu toggle
+const navContainer = document.querySelector(".nav-container");
+const menuToggle = document.querySelector(".menu-toggle");
+
+if (navContainer && menuToggle) {
+  menuToggle.addEventListener("click", () => {
+    navContainer.classList.toggle("nav-open");
+  });
+}
