@@ -1,0 +1,293 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background: #f5f7fb;
+  color: #111827;
+  line-height: 1.6;
+}
+
+header {
+  background: linear-gradient(135deg, #4f46e5, #6366f1);
+  color: #fff;
+  padding: 20px 24px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.nav-container {
+  max-width: 1080px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 1.25rem;
+  letter-spacing: 0.03em;
+}
+
+nav a {
+  color: #e5e7eb;
+  margin-left: 16px;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+nav a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.lang-toggle {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.lang-btn {
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  background: transparent;
+  color: #e5e7eb;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.lang-btn.active {
+  background: #ffffff;
+  color: #4f46e5;
+  font-weight: 600;
+}
+
+main {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 32px 20px 40px;
+}
+
+.hero {
+  margin-top: 16px;
+  padding: 32px 24px;
+  background: #ffffff;
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(0, 1.2fr);
+  gap: 24px;
+  align-items: center;
+}
+
+.hero h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #111827;
+}
+
+.hero p {
+  font-size: 1rem;
+  color: #4b5563;
+  margin-bottom: 12px;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.8rem;
+  background: #eef2ff;
+  color: #4f46e5;
+  padding: 4px 10px;
+  border-radius: 999px;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.hero-list {
+  margin-top: 8px;
+  list-style: none;
+  display: grid;
+  gap: 6px;
+  font-size: 0.95rem;
+}
+
+.hero-list li::before {
+  content: "•";
+  color: #4f46e5;
+  margin-right: 6px;
+}
+
+.hero-cta {
+  margin-top: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+}
+
+.primary-btn {
+  background: #4f46e5;
+  color: #fff;
+  border: none;
+  padding: 9px 18px;
+  border-radius: 999px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.primary-btn:hover {
+  background: #4338ca;
+}
+
+.hero-note {
+  font-size: 0.8rem;
+  color: #6b7280;
+}
+
+.hero-side {
+  background: #eef2ff;
+  border-radius: 16px;
+  padding: 18px 16px;
+  font-size: 0.9rem;
+}
+
+.hero-side h3 {
+  font-size: 1rem;
+  margin-bottom: 6px;
+  color: #1f2933;
+}
+
+.tag-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 6px;
+}
+
+.tag {
+  font-size: 0.75rem;
+  padding: 3px 8px;
+  border-radius: 999px;
+  background: #e0e7ff;
+  color: #4338ca;
+}
+
+section {
+  margin-top: 28px;
+}
+
+section h2 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  color: #111827;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 18px 18px 20px;
+  box-shadow: 0 6px 18px rgba(15, 23, 42, 0.05);
+  font-size: 0.95rem;
+  color: #374151;
+}
+
+.two-column {
+  display: grid;
+  grid-template-columns: minmax(0, 1.5fr) minmax(0, 1.3fr);
+  gap: 18px;
+}
+
+.list {
+  margin-left: 16px;
+  margin-top: 6px;
+}
+
+.list li {
+  margin-bottom: 4px;
+}
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+  margin-top: 10px;
+}
+
+.price-card {
+  border-radius: 14px;
+  padding: 16px 16px 18px;
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+}
+
+.price-card h3 {
+  font-size: 1rem;
+  margin-bottom: 6px;
+  color: #111827;
+}
+
+.price {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 6px;
+  color: #4f46e5;
+}
+
+.small {
+  font-size: 0.85rem;
+  color: #6b7280;
+}
+
+.contact-card p {
+  margin-bottom: 4px;
+}
+
+footer {
+  text-align: center;
+  padding: 16px;
+  font-size: 0.8rem;
+  color: #6b7280;
+  margin-top: 30px;
+}
+
+/* Payment page extras */
+.payment-section h3 {
+  font-size: 1.05rem;
+  margin-top: 10px;
+  margin-bottom: 6px;
+  color: #111827;
+}
+
+.payment-section ul {
+  margin-left: 18px;
+  margin-top: 4px;
+}
+
+.payment-section li {
+  margin-bottom: 4px;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    grid-template-columns: 1fr;
+  }
+  .two-column {
+    grid-template-columns: 1fr;
+  }
+  header {
+    position: static;
+  }
+  nav {
+    display: none;
+  }
+}
