@@ -1,151 +1,76 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Payment – Tutoring with Ezra</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+<section id="payment" class="payment-section">
+  <h2 data-lang="en">Payment options</h2>
+  <h2 data-lang="fr" style="display:none;">Options de paiement</h2>
 
-  <!-- PayPal SDK (Part 1 from your screenshot) -->
-  <!-- Paste the exact code PayPal gave you here, e.g.:                     -->
-  <!-- <script                                                              -->
-  <!--   src="https://www.paypal.com/sdk/js?client-id=.....&currency=CAD"> -->
-  <!-- </script>                                                            -->
-  <!-- ↓↓↓ REPLACE THIS PLACEHOLDER WITH YOUR REAL PART 1 SCRIPT ↓↓↓ -->
-  <script
-    src="https://www.paypal.com/sdk/js?client-id=YOUR_CLIENT_ID_HERE&components=hosted-buttons&currency=CAD">
-  </script>
-  <!-- ↑↑↑ REPLACE THIS LINE WITH THE REAL PART 1 SCRIPT FROM PAYPAL ↑↑↑ -->
+  <div class="card">
+    <p data-lang="en">
+      All rates are listed in Canadian dollars (CAD). How you pay depends on where you are located.
+    </p>
+    <p data-lang="fr" style="display:none;">
+      Tous les tarifs sont indiqués en dollars canadiens (CAD). Le mode de paiement dépend de l’endroit où vous vous trouvez.
+    </p>
 
-</head>
-<body>
-<header>
-  <div class="nav-container">
-    <div class="logo" data-lang="en">Tutoring with Ezra</div>
-    <div class="logo" data-lang="fr" style="display:none;">Tutorat avec Ezra</div>
+    <p class="small" style="margin-top:6px;" data-lang="en">
+      Approximate values in USD: 40 CAD ≈ 30 USD, 30 CAD ≈ 23 USD, 25 CAD ≈ 19 USD.
+    </p>
+    <p class="small" style="margin-top:6px;" data-lang="fr" style="display:none;">
+      Valeurs approximatives en USD : 40 CAD ≈ 30 USD, 30 CAD ≈ 23 USD, 25 CAD ≈ 19 USD.
+    </p>
 
-    <nav>
-      <a href="about.html" data-lang="en">About</a>
-      <a href="about.html" data-lang="fr" style="display:none;">À propos</a>
+    <!-- =================================== -->
+    <!-- 1. E-TRANSFER (CANADA ONLY)         -->
+    <!-- =================================== -->
 
-      <a href="subjects.html" data-lang="en">Subjects</a>
-      <a href="subjects.html" data-lang="fr" style="display:none;">Matières</a>
+    <h3 style="margin-top:16px;" data-lang="en">Interac e-transfer (Canada only)</h3>
+    <h3 style="margin-top:16px;" data-lang="fr" style="display:none;">Virement Interac (Canada seulement)</h3>
 
-      <a href="pricing.html" data-lang="en">Pricing</a>
-      <a href="pricing.html" data-lang="fr" style="display:none;">Tarifs</a>
+    <p data-lang="en">Send e-transfers in CAD to:</p>
+    <p data-lang="fr" style="display:none;">Envoyez vos virements Interac en CAD à :</p>
 
-      <a href="contact.html" data-lang="en">Contact</a>
-      <a href="contact.html" data-lang="fr" style="display:none;">Contact</a>
+    <p style="margin-top:6px;"><strong>tutoringwithezra@gmail.com</strong></p>
 
-      <a href="payment.html" data-lang="en">Payment</a>
-      <a href="payment.html" data-lang="fr" style="display:none;">Paiement</a>
-    </nav>
+    <ul style="margin-top:8px;">
+      <li data-lang="en">Include your child’s name and session date(s) in the message.</li>
+      <li data-lang="fr" style="display:none;">Incluez le nom de votre enfant et la date de la séance dans le message.</li>
+    </ul>
 
-    <div class="lang-toggle">
-      <button class="lang-btn active" data-set-lang="en">EN</button>
-      <button class="lang-btn" data-set-lang="fr">FR</button>
-    </div>
+    <!-- =================================== -->
+    <!-- 2. PAYPAL (WORLDWIDE)               -->
+    <!-- =================================== -->
+
+    <h3 style="margin-top:20px;" data-lang="en">PayPal (worldwide)</h3>
+    <h3 style="margin-top:20px;" data-lang="fr" style="display:none;">PayPal (international)</h3>
+
+    <p data-lang="en">
+      If you are outside Canada, or prefer to pay by card or PayPal balance, use the link below.
+      PayPal will convert CAD into your local currency automatically.
+    </p>
+    <p data-lang="fr" style="display:none;">
+      Si vous êtes à l’extérieur du Canada ou préférez payer par carte ou solde PayPal, utilisez le lien ci-dessous.
+      PayPal convertira automatiquement les CAD dans votre devise locale.
+    </p>
+
+    <a 
+      href="https://www.paypal.com/ncp/payment/SSHHJKZAA75GY"
+      target="_blank"
+      style="
+        display:inline-block;
+        margin-top:14px;
+        background:#0070ba;
+        color:#fff;
+        padding:10px 18px;
+        border-radius:8px;
+        font-weight:600;
+        text-decoration:none;
+      ">
+      Pay with PayPal
+    </a>
+
+    <p class="small" style="margin-top:14px;" data-lang="en">
+      The PayPal page will show CAD pricing, and your bank/card will convert it.
+    </p>
+    <p class="small" style="margin-top:14px;" data-lang="fr" style="display:none;">
+      La page PayPal affichera les prix en CAD, et votre banque ou carte effectuera la conversion.
+    </p>
   </div>
-</header>
-
-<main>
-  <section id="payment" class="payment-section">
-    <h2 data-lang="en">Payment options</h2>
-    <h2 data-lang="fr" style="display:none;">Options de paiement</h2>
-
-    <div class="card">
-      <p data-lang="en">
-        All rates are listed in Canadian dollars (CAD). How you pay depends on where you are located.
-      </p>
-      <p data-lang="fr" style="display:none;">
-        Tous les tarifs sont indiqués en dollars canadiens (CAD). Le mode de paiement dépend de l’endroit où vous vous trouvez.
-      </p>
-
-      <p class="small" style="margin-top:6px;" data-lang="en">
-        Approximate values in USD (for international families): 40 CAD ≈ 30 USD, 30 CAD ≈ 23 USD, 25 CAD ≈ 19 USD.
-        Exact amounts may vary slightly with exchange rates.
-      </p>
-      <p class="small" style="margin-top:6px;" data-lang="fr" style="display:none;">
-        Valeurs approximatives en USD (pour les familles à l’international) : 40 CAD ≈ 30 USD, 30 CAD ≈ 23 USD, 25 CAD ≈ 19 USD.
-        Les montants exacts peuvent varier légèrement selon le taux de change.
-      </p>
-
-      <!-- =================================== -->
-      <!-- 1. E-TRANSFER (CANADA ONLY)         -->
-      <!-- =================================== -->
-
-      <h3 style="margin-top:16px;" data-lang="en">Interac e-transfer (Canada only)</h3>
-      <h3 style="margin-top:16px;" data-lang="fr" style="display:none;">Virement Interac (Canada seulement)</h3>
-
-      <p data-lang="en">
-        If you are in Canada, the easiest way to pay is by Interac e-transfer in CAD to:
-      </p>
-      <p data-lang="fr" style="display:none;">
-        Si vous êtes au Canada, le moyen le plus simple de payer est le virement Interac en CAD à :
-      </p>
-
-      <p style="margin-top:6px;">
-        <strong>tutoringwithezra@gmail.com</strong>
-      </p>
-
-      <ul style="margin-top:8px;">
-        <li data-lang="en">
-          Please include your child’s name and the date(s) of the session in the message.
-        </li>
-        <li data-lang="fr" style="display:none;">
-          Merci d’indiquer le nom de votre enfant et la ou les dates de séance dans le message du virement.
-        </li>
-
-        <li data-lang="en">
-          Payment is usually sent after each session, unless we agree on a different schedule.
-        </li>
-        <li data-lang="fr" style="display:none;">
-          Le paiement se fait généralement après chaque séance, sauf si nous convenons ensemble d’un autre arrangement.
-        </li>
-      </ul>
-
-      <!-- =================================== -->
-      <!-- 2. PAYPAL HOSTED BUTTON (WORLDWIDE) -->
-      <!-- =================================== -->
-
-      <h3 style="margin-top:20px;" data-lang="en">PayPal (worldwide)</h3>
-      <h3 style="margin-top:20px;" data-lang="fr" style="display:none;">PayPal (international)</h3>
-
-      <p data-lang="en">
-        If you are outside Canada, or prefer to pay by card or PayPal balance, you can use the secure PayPal button below.
-        PayPal will automatically convert CAD into your local currency.
-      </p>
-      <p data-lang="fr" style="display:none;">
-        Si vous êtes à l’extérieur du Canada ou si vous préférez payer par carte ou solde PayPal, vous pouvez utiliser le bouton PayPal ci-dessous.
-        PayPal convertit automatiquement les CAD dans votre devise locale.
-      </p>
-
-      <!-- Part 2: your PayPal Hosted Button code -->
-      <div id="paypal-container-LVEQ256ZYBAYE"></div>
-      <script>
-        paypal.HostedButtons({
-          hostedButtonId: "LVEQ256ZYBAYE",
-        }).render("#paypal-container-LVEQ256ZYBAYE")
-      </script>
-
-      <p class="small" style="margin-top:14px;" data-lang="en">
-        You’ll see the final amount in your own currency on the PayPal checkout screen before you confirm payment.
-      </p>
-      <p class="small" style="margin-top:14px;" data-lang="fr" style="display:none;">
-        Vous verrez le montant final dans votre propre devise sur l’écran de paiement PayPal avant de confirmer le paiement.
-      </p>
-    </div>
-  </section>
-</main>
-
-<footer>
-  <span data-lang="en">© Tutoring with Ezra</span>
-  <span data-lang="fr" style="display:none;">© Tutorat avec Ezra</span>
-</footer>
-
-<script src="script.js"></script>
-</body>
-</html>
+</section>
