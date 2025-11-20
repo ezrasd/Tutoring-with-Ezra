@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Payment – Tutoring with Ezra</title>
+  <title>Contact & Booking – Tutoring with Ezra</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -40,93 +40,123 @@
 </header>
 
 <main>
-  <section id="payment" class="payment-section">
-    <h2 data-lang="en">Payment options</h2>
-    <h2 data-lang="fr" style="display:none;">Options de paiement</h2>
+  <section id="contact">
+    <h2 data-lang="en">Contact & booking</h2>
+    <h2 data-lang="fr" style="display:none;">Contact et réservation</h2>
 
-    <div class="card">
+    <div class="card contact-card">
       <p data-lang="en">
-        All rates are listed in Canadian dollars (CAD). How you pay depends on where you are located:
+        Please use this form to request a first session or ask questions. I’ll reply by email as soon as possible.
       </p>
       <p data-lang="fr" style="display:none;">
-        Tous les tarifs sont indiqués en dollars canadiens (CAD). Le mode de paiement dépend de l’endroit où vous vous trouvez :
+        Veuillez utiliser ce formulaire pour réserver une première séance ou poser vos questions. Je vous répondrai par courriel dès que possible.
       </p>
 
-      <p class="small" style="margin-top:6px;" data-lang="en">
-        For families outside Canada, here are approximate conversions to U.S. dollars (USD), just to give a sense of scale:
-        40 CAD ≈ 30 USD, 30 CAD ≈ 23 USD, 25 CAD ≈ 19 USD. The exact amount in your currency may vary slightly with exchange rates.
-      </p>
-      <p class="small" style="margin-top:6px;" data-lang="fr" style="display:none;">
-        Pour les familles à l’extérieur du Canada, voici des conversions approximatives en dollars américains (USD), à titre indicatif :
-        40 CAD ≈ 30 USD, 30 CAD ≈ 23 USD, 25 CAD ≈ 19 USD. Le montant exact dans votre devise peut varier légèrement selon le taux de change.
-      </p>
+      <!-- BOOKING FORM -->
+      <form class="booking-form"
+            action="https://formsubmit.co/tutoringwithezra@gmail.com"
+            method="POST">
 
-      <h3 data-lang="en">If you are in Canada</h3>
-      <h3 data-lang="fr" style="display:none;">Si vous êtes au Canada</h3>
+        <!-- FormSubmit settings -->
+        <input type="hidden" name="_next" value="https://ezrasd.github.io/Tutoring-with-Ezra/payment.html">
+        <input type="hidden" name="_subject" value="New tutoring booking request (website)">
+        <input type="hidden" name="_captcha" value="false">
 
-      <ul>
-        <li data-lang="en">
-          You can pay by <strong>Interac e-transfer in CAD</strong> to:
-          <strong>tutoringwithezra@gmail.com</strong>.
-        </li>
-        <li data-lang="fr" style="display:none;">
-          Vous pouvez payer par <strong>virement Interac en CAD</strong> à :
-          <strong>tutoringwithezra@gmail.com</strong>.
-        </li>
+        <div class="booking-grid">
+          <div class="field">
+            <label data-lang="en" for="parent-name">Parent/guardian name</label>
+            <label data-lang="fr" for="parent-name" style="display:none;">Nom du parent/tuteur</label>
+            <input type="text" id="parent-name" name="Parent / Guardian name" required>
+          </div>
 
-        <li data-lang="en">
-          Please include your child’s name and the date(s) of the session in the message.
-        </li>
-        <li data-lang="fr" style="display:none;">
-          Merci d’indiquer le nom de votre enfant et la ou les dates de séance dans le message du virement.
-        </li>
+          <div class="field">
+            <label data-lang="en" for="email">Email</label>
+            <label data-lang="fr" for="email" style="display:none;">Courriel</label>
+            <input type="email" id="email" name="email" required>
+          </div>
 
-        <li data-lang="en">
-          You can also pay in CAD through <strong>PayPal</strong> if you prefer.
-        </li>
-        <li data-lang="fr" style="display:none;">
-          Vous pouvez aussi payer en CAD via <strong>PayPal</strong> si vous préférez.
-        </li>
-      </ul>
+          <div class="field">
+            <label data-lang="en" for="phone">Phone (optional)</label>
+            <label data-lang="fr" for="phone" style="display:none;">Téléphone (optionnel)</label>
+            <input type="tel" id="phone" name="Phone (optional)">
+          </div>
 
-      <h3 style="margin-top:14px;" data-lang="en">If you are outside Canada</h3>
-      <h3 style="margin-top:14px;" data-lang="fr" style="display:none;">Si vous êtes à l’extérieur du Canada</h3>
+          <div class="field">
+            <label data-lang="en" for="student-name">Student’s name</label>
+            <label data-lang="fr" for="student-name" style="display:none;">Nom de l’élève</label>
+            <input type="text" id="student-name" name="Student name" required>
+          </div>
 
-      <ul>
-        <li data-lang="en">
-          Payments are made through <strong>PayPal</strong>. PayPal will automatically convert from CAD into your local currency.
-        </li>
-        <li data-lang="fr" style="display:none;">
-          Les paiements se font via <strong>PayPal</strong>. PayPal convertit automatiquement les montants en CAD dans votre devise locale.
-        </li>
+          <div class="field">
+            <label data-lang="en" for="grade">Grade (K–8)</label>
+            <label data-lang="fr" for="grade" style="display:none;">Niveau scolaire (maternelle à 8e)</label>
+            <select id="grade" name="Grade (K–8)" required>
+              <option value="" selected disabled>Choose a grade</option>
+              <option value="K">Kindergarten</option>
+              <option value="1">Grade 1</option>
+              <option value="2">Grade 2</option>
+              <option value="3">Grade 3</option>
+              <option value="4">Grade 4</option>
+              <option value="5">Grade 5</option>
+              <option value="6">Grade 6</option>
+              <option value="7">Grade 7</option>
+              <option value="8">Grade 8</option>
+            </select>
+          </div>
 
-        <li data-lang="en">
-          You will receive a secure PayPal link or invoice after we confirm the session time by email at
-          <strong>tutoringwithezra@gmail.com</strong>.
-        </li>
-        <li data-lang="fr" style="display:none;">
-          Vous recevrez un lien sécurisé ou une facture PayPal une fois l’horaire confirmé par courriel à
-          <strong>tutoringwithezra@gmail.com</strong>.
-        </li>
-      </ul>
+          <div class="field">
+            <label data-lang="en" for="subjects">Subjects</label>
+            <label data-lang="fr" for="subjects" style="display:none;">Matières</label>
+            <input type="text" id="subjects" name="Subjects"
+                   placeholder="e.g. Math, French, English, Science" required>
+          </div>
 
-      <h3 style="margin-top:14px;" data-lang="en">When to pay</h3>
-      <h3 style="margin-top:14px;" data-lang="fr" style="display:none;">Quand payer</h3>
+          <div class="field">
+            <label data-lang="en" for="language">Preferred tutoring language</label>
+            <label data-lang="fr" for="language" style="display:none;">Langue de tutorat préférée</label>
+            <select id="language" name="Preferred language" required>
+              <option value="" selected disabled>Select</option>
+              <option value="English">English</option>
+              <option value="French">French</option>
+              <option value="Both">Both / alternating</option>
+            </select>
+          </div>
 
-      <ul>
-        <li data-lang="en">
-          Payment is typically made <strong>after each session</strong>, unless we agree together on another schedule (for example, weekly).
-        </li>
-        <li data-lang="fr" style="display:none;">
-          Le paiement se fait généralement <strong>après chaque séance</strong>, sauf si nous convenons ensemble d’un autre arrangement (par exemple, chaque semaine).
-        </li>
-      </ul>
+          <div class="field">
+            <label data-lang="en" for="timezone">Your time zone / city</label>
+            <label data-lang="fr" for="timezone" style="display:none;">Votre fuseau horaire / ville</label>
+            <input type="text" id="timezone" name="Time zone / City"
+                   placeholder="e.g. Toronto (EST), Vancouver (PST)">
+          </div>
+        </div>
+
+        <div class="field">
+          <label data-lang="en" for="times">Preferred days & times</label>
+          <label data-lang="fr" for="times" style="display:none;">Jours et heures préférés</label>
+          <textarea id="times" name="Preferred days and times"
+                    placeholder="For example: Tuesdays after 6pm, Saturdays morning"></textarea>
+        </div>
+
+        <div class="field">
+          <label data-lang="en" for="message">Anything else I should know?</label>
+          <label data-lang="fr" for="message" style="display:none;">Autres informations importantes</label>
+          <textarea id="message" name="Additional details"
+                    placeholder="Learning goals, specific concerns, school program (IB, French immersion, etc.)."></textarea>
+        </div>
+
+        <button type="submit" class="primary-btn" data-lang="en">
+          Send booking request
+        </button>
+        <button type="submit" class="primary-btn" data-lang="fr" style="display:none;">
+          Envoyer la demande de réservation
+        </button>
+      </form>
 
       <p class="small" style="margin-top:10px;" data-lang="en">
-        If you have any questions about payment or currencies, feel free to ask in your first email and I’ll clarify what works best for your situation.
+        After you submit this form, you’ll be automatically taken to the Payment page to see e-transfer and PayPal details.
       </p>
       <p class="small" style="margin-top:10px;" data-lang="fr" style="display:none;">
-        Si vous avez des questions au sujet du paiement ou des devises, n’hésitez pas à les poser dans votre premier courriel et je vous expliquerai ce qui est le plus simple pour votre situation.
+        Après l’envoi du formulaire, vous serez automatiquement redirigé vers la page Paiement pour voir les détails de virement Interac et PayPal.
       </p>
     </div>
   </section>
